@@ -1,0 +1,39 @@
+.expense-form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* input[type="date"],
+input[type="text"],
+input[type="number"] { */
+.expense-form__control input {
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.expense-form__control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+}
+.submit-button button {
+    background-color: #40005d;
+    padding: 0.8rem 2rem;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    font-weight: bold;
+}
