@@ -1,4 +1,4 @@
-import "./ExpenseFilter.css";
+import "../css/ExpenseFilter.css";
 const ExpenseFilter = (props) => {
     const changeHandler = (event) => {
         props.onChangedFilter(event.target.value);
@@ -6,7 +6,8 @@ const ExpenseFilter = (props) => {
     return (
         <div className="filter-items">
             <label>Filter by year</label>
-            <select onChange={changeHandler}>
+            <select value={props.year} onChange={changeHandler}>
+                <option value="">Nothing</option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
