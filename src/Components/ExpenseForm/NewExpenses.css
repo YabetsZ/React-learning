@@ -1,4 +1,4 @@
-.form {
+.container {
     padding: 1rem;
     background-color: rgb(31, 31, 31);
     margin: 2rem auto;
@@ -6,4 +6,18 @@
     max-width: 95%;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.container.cancel {
+    display: grid;
+    place-content: center;
+}
+.add-button {
+    background-color: #40005d;
+    padding: 0.8rem 2rem;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    font-weight: bold;
 }

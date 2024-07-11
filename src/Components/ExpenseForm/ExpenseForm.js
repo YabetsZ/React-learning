@@ -16,6 +16,7 @@ const ExpenseForm = (props) => {
             setInputData((prevState) => ({ ...prevState, date: value }));
         }
     };
+
     const submitHandler = (event) => {
         event.preventDefault();
         let fullDate = new Date(inputData.date);
@@ -68,8 +69,17 @@ const ExpenseForm = (props) => {
                     />
                 </div>
             </div>
-            <div className="submit-button">
-                <button type="submit">Submit</button>
+            <div className="submit-cancel-button">
+                <button
+                    type="button"
+                    className="cancel-button"
+                    onClick={() => props.onCollapse()}
+                >
+                    Cancel
+                </button>
+                <button className="submit-button" type="submit">
+                    Submit
+                </button>
             </div>
         </form>
     );

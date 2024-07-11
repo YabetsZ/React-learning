@@ -1,0 +1,9 @@
+.no-expense-msg {
+    text-align: center;
+    color: white;
+    text-shadow: 4px 3px 4px gray;
+}
+.expenses-list {
+    list-style: none;
+    padding: 0;
+}

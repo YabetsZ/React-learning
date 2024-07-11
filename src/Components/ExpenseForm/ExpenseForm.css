@@ -22,12 +22,13 @@ input[type="number"] { */
     gap: 5px;
     font-weight: bold;
 }
-.submit-button {
+.submit-cancel-button {
     display: flex;
     justify-content: flex-end;
     margin: 0 20px;
+    gap: 10px;
 }
-.submit-button button {
+.submit-cancel-button button {
     background-color: #40005d;
     padding: 0.8rem 2rem;
     border: 2px solid white;
